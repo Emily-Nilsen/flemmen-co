@@ -52,6 +52,18 @@ const articles = [
     dateTime: '2023-08-30',
   },
   {
+    id: 6,
+    title: 'Byggekonsulent frifunnet for bedragerier',
+    articleUrl:
+      'https://www.finansavisen.no/jus/2024/06/22/8145720/konsulent-frifunnet-for-bedragerier?zephr_sso_ott=XwRgN1',
+    imageUrl:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Blog/Publisert_22._juni_k0vskr.webp',
+    content:
+      'Først ble den innleide byggekonsulenten dømt til to og et halvt års fengsel for flere bedragerier. I ankerunden er han frifunnet for flere forhold, og straffen er mer enn halvert.',
+    date: '22. jun, 2024',
+    dateTime: '2024-06-22',
+  },
+  {
     id: 5,
     title: 'forsvarsadvokat.no',
     articleUrl: 'https://forsvarsadvokat.no/',
