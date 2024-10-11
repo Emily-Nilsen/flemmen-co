@@ -41,8 +41,8 @@ export function Contact() {
                   {adresse}
                 </h3>
                 <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Sørkedalsveien 6 (KPMG-bygget 18. etasje)</p>
-                  <p>0369 Oslo</p>
+                  <p>Oscars gate 30</p>
+                  <p>0256 Oslo</p>
                 </address>
               </div>
               <motion.div
