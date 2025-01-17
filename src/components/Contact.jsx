@@ -212,7 +212,7 @@ export function Contact() {
                   </div>
                 </dl>
               </motion.div>
-              <motion.div
+              {/* <motion.div
                 whileInView={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{
@@ -220,12 +220,12 @@ export function Contact() {
                   duration: 1,
                   type: 'fade',
                 }}
-                className="rounded-none bg-gray-50 p-10"
+                className="p-10 rounded-none bg-gray-50"
               >
-                <h3 className="text-sm font-semibold capitalize leading-7 text-gray-600">
+                <h3 className="text-sm font-semibold leading-7 text-gray-600 capitalize">
                   {advokat}
                 </h3>
-                <h3 className="text-base font-semibold capitalize leading-7 text-gray-900">
+                <h3 className="text-base font-semibold leading-7 text-gray-900 capitalize">
                   Hugo R. Hansen
                 </h3>
                 <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
@@ -252,7 +252,7 @@ export function Contact() {
                     </Link>
                   </div>
                 </dl>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>
