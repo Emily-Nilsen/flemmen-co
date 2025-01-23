@@ -60,7 +60,7 @@ export function Contact() {
                 </h3>
                 <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
                   <p>Postboks 7016 Majorstuen</p>
-                  <p>0306 Oslo</p>
+                  <p>0352 Oslo</p>
                 </address>
               </motion.div>
               <motion.div
