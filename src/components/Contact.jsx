@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import useTranslation from 'next-translate/useTranslation'
 
 export function Contact() {
-  const { t, lang } = useTranslation('common')
-  const kontakt = t('kontakt')
+  const { t } = useTranslation('common')
+  // const kontakt = t('kontakt')
   const advokat = t('advokat')
   const teamleder = t('teamleder')
   const adresse = t('adresse')
@@ -212,7 +212,7 @@ export function Contact() {
                   </div>
                 </dl>
               </motion.div>
-              {/* <motion.div
+              <motion.div
                 whileInView={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 transition={{
@@ -220,13 +220,13 @@ export function Contact() {
                   duration: 1,
                   type: 'fade',
                 }}
-                className="p-10 rounded-none bg-gray-50"
+                className="rounded-none bg-gray-50 p-10"
               >
-                <h3 className="text-sm font-semibold leading-7 text-gray-600 capitalize">
+                <h3 className="text-sm font-semibold capitalize leading-7 text-gray-600">
                   {advokat}
                 </h3>
-                <h3 className="text-base font-semibold leading-7 text-gray-900 capitalize">
-                  Hugo R. Hansen
+                <h3 className="text-base font-semibold capitalize leading-7 text-gray-900">
+                  Eivind Hatlebrekke
                 </h3>
                 <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
                   <div>
@@ -234,7 +234,7 @@ export function Contact() {
                     <dd>
                       <Link
                         className="font-semibold text-gray-600 transition-colors duration-200 ease-in-out hover:text-gray-500"
-                        href="mailto:hrh@flemmenco.no"
+                        href="mailto:eha@flemmenco.no"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -246,13 +246,13 @@ export function Contact() {
                     <dt className="sr-only">Phone number</dt>
                     <Link
                       className="transition-colors duration-200 ease-in-out hover:text-gray-900"
-                      href="tel:+4791545671"
+                      href="tel:+4790138842"
                     >
-                      <dd>(+47) 915 45 671</dd>
+                      <dd>(+47) 901 38 842</dd>
                     </Link>
                   </div>
                 </dl>
-              </motion.div> */}
+              </motion.div>
             </motion.div>
           </div>
         </div>
