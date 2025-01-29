@@ -238,7 +238,7 @@ export function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        hrh@flemmenco.no
+                        eha@flemmenco.no
                       </Link>
                     </dd>
                   </div>
