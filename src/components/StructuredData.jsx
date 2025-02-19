@@ -20,11 +20,10 @@ export function StructuredData() {
               },
               url: 'https://flemmenco.no/en',
               telephone: '+47 400 01 423',
-              logo: 'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_logo_iaexmq.svg',
+              logo: '/media/Flemmen_Co_logo.svg',
               description:
                 'Professional legal services in Oslo, specializing in business law, dispute resolution, and more.',
-              image:
-                'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_hero_desktop_v1_cropped_i51zcb.webp',
+              image: '/media/hero-desktop.webp',
               keywords: [
                 'Law Firm',
                 'Legal Services',
@@ -47,11 +46,10 @@ export function StructuredData() {
               },
               url: 'https://flemmenco.no',
               telephone: '+47 400 01 423',
-              logo: 'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_logo_iaexmq.svg',
+              logo: '/media/Flemmen_Co_logo.svg',
               description:
                 'Profesjonelle juridiske tjenester i Oslo, spesialisert på forretningsjus, tvisteløsning og mer.',
-              image:
-                'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_hero_desktop_v1_cropped_i51zcb.webp',
+              image: '/media/hero-desktop.webp',
               keywords: [
                 'Advokatfirma',
                 'Juridiske Tjenester',
