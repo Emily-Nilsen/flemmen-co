@@ -5,7 +5,7 @@ import useTranslation from 'next-translate/useTranslation'
 
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
-  const { t, lang } = useTranslation('common')
+  const { t } = useTranslation('common')
   const kontakt = t('kontakt')
 
   return [
