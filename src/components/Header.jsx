@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
@@ -40,7 +37,7 @@ function MobileNavLink({ children, ...props }) {
   return (
     <Popover.Button
       as={Link}
-      className="block text-base uppercase leading-7 tracking-tight text-gray-700"
+      className="block text-base leading-7 tracking-tight text-gray-700 uppercase"
       {...props}
     >
       {children}
@@ -48,12 +45,8 @@ function MobileNavLink({ children, ...props }) {
   )
 }
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export function Header(props) {
-  const { t, lang } = useTranslation('common')
+export function Header() {
+  const { t } = useTranslation('common')
   const kontakt = t('kontakt')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
 
@@ -64,7 +57,7 @@ export function Header(props) {
   return (
     <header className="absolute w-full lg:relative lg:px-20">
       <nav>
-        <div className="relative z-50 mx-auto flex max-w-7xl justify-between px-6 py-8 lg:px-0">
+        <div className="relative z-50 flex justify-between px-6 py-8 mx-auto max-w-7xl lg:px-0">
           <div className="relative z-10 flex items-center gap-16">
             <Link
               className="flex items-center gap-1"
@@ -87,9 +80,9 @@ export function Header(props) {
                   >
                     {({ open }) =>
                       open ? (
-                        <ChevronUpIcon className="h-6 w-6" />
+                        <ChevronUpIcon className="w-6 h-6" />
                       ) : (
-                        <MenuIcon className="h-6 w-6" />
+                        <MenuIcon className="w-6 h-6" />
                       )
                     }
                   </Popover.Button>
@@ -114,7 +107,7 @@ export function Header(props) {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 px-6 pt-32 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 shadow-gray-900/20"
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="#media">Media</MobileNavLink>
