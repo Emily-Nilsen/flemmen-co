@@ -11,7 +11,7 @@ export function Hero() {
         {/* Mobile */}
         <div className="sm:hidden">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1694621177/Flemmen%20Co/Flemmen_Co_hero_mobile_cropped_itv4fj.webp"
+            src="/media/hero-mobile.webp"
             alt="Christian Flemmen Johansen & Stine Kalkvik Stenberg"
             width={1598}
             height={1500}
