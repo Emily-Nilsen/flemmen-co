@@ -14,7 +14,7 @@ import { StructuredData } from '@/components/StructuredData'
 import useTranslation from 'next-translate/useTranslation'
 
 export default function Home() {
-  const { t, lang } = useTranslation('common')
+  const { t } = useTranslation('common')
   const title = t('title')
   const metaDescription = t('meta-description')
 
