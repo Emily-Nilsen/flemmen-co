@@ -24,7 +24,7 @@ export function Hero() {
         {/* Desktop */}
         <div className="hidden sm:block">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_hero_desktop_v1_cropped_i51zcb.webp"
+            src="/media/hero-desktop.webp"
             alt="Christian Flemmen Johansen & Stine Kalkvik Stenberg"
             width={4500}
             height={2739}

@@ -27,10 +27,7 @@ export default function Home() {
         {/* Open Graph data */}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={metaDescription} />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Flemmen%20Co/Flemmen_Co_hero_desktop_v1_cropped_i51zcb.webp"
-        />
+        <meta property="og:image" content="/media/hero-desktop.webp" />
         <meta property="og:url" content="https://flemmenco.no/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} />
