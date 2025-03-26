@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
 const articles = [
   {
@@ -70,6 +71,101 @@ const articles = [
 ]
 
 export function MediaBlog() {
+  const { t } = useTranslation('common')
+  const articleTitle01 = t('article_title_01')
+  const articleDate01 = t('article_date_01')
+  const articleText01 = t('article_text_01')
+  const articleTitle02 = t('article_title_02')
+  const articleDate02 = t('article_date_02')
+  const articleText02 = t('article_text_02')
+  const articleTitle03 = t('article_title_03')
+  const articleDate03 = t('article_date_03')
+  const articleText03 = t('article_text_03')
+  const articleTitle04 = t('article_title_04')
+  const articleDate04 = t('article_date_04')
+  const articleText04 = t('article_text_04')
+  const articleTitle05 = t('article_title_05')
+  const articleDate05 = t('article_date_05')
+  const articleText05 = t('article_text_05')
+  const articleTitle06 = t('article_title_06')
+  const articleDate06 = t('article_date_06')
+  const articleText06 = t('article_text_06')
+  const articleTitle07 = t('article_title_07')
+  const articleDate07 = t('article_date_07')
+  const articleText07 = t('article_text_07')
+
+  const articles = [
+    {
+      id: 1,
+      title: articleTitle01,
+      articleUrl:
+        'https://www.advokatbladet.no/elden-oppstart-av-advokatkontor-partner/partner-forlater-elden-etter-16-ar-starter-for-seg-selv/199683',
+      imageUrl: '/media/article_3.webp',
+      content: articleText01,
+      date: articleDate01,
+      dateTime: '2023-09-01',
+    },
+    {
+      id: 2,
+      title: articleTitle02,
+      articleUrl:
+        'https://advokatwatch.no/nyheter/karriere/article16395400.ece',
+      imageUrl: '/media/article_4.webp',
+      content: articleText02,
+      date: articleDate02,
+      dateTime: '2023-08-31',
+    },
+    {
+      id: 3,
+      title: articleTitle03,
+      articleUrl:
+        'https://www.finansavisen.no/jus/2023/08/31/8032852/flemmen-forlater-elden-med-alle-egne-klienter?zephr_sso_ott=hTqGBr',
+      imageUrl: '/media/article_2.webp',
+      content: articleText03,
+      date: articleDate03,
+      dateTime: '2023-08-31',
+    },
+    {
+      id: 4,
+      title: articleTitle04,
+      articleUrl:
+        'https://www.dn.no/jus/christian-flemmen-johansen/advokatfirmaet-elden/elden/toppadvokat-forlater-elden/2-1-1508933',
+      imageUrl: '/media/article_1.webp',
+      content: articleText04,
+      date: articleDate04,
+      dateTime: '2023-08-30',
+    },
+    {
+      id: 7,
+      title: articleTitle05,
+      articleUrl:
+        'https://www.finansavisen.no/jus/2023/10/05/8039062/flemmen-gar-sin-egen-vei?zephr_sso_ott=PqfDLl',
+      imageUrl: '/media/article_05.webp',
+      content: articleText05,
+      date: articleDate05,
+      dateTime: '2023-10-05',
+    },
+    {
+      id: 6,
+      title: articleTitle06,
+      articleUrl:
+        'https://www.finansavisen.no/jus/2024/06/22/8145720/konsulent-frifunnet-for-bedragerier?zephr_sso_ott=XwRgN1',
+      imageUrl: '/media/article_6.webp',
+      content: articleText06,
+      date: articleDate06,
+      dateTime: '2024-06-22',
+    },
+    {
+      id: 5,
+      title: articleTitle07,
+      articleUrl: 'https://forsvarsadvokat.no/',
+      imageUrl: '/media/article_0.webp',
+      content: articleText07,
+      date: '',
+      dateTime: '2007-09-01',
+    },
+  ]
+
   return (
     <div
       id="media"
