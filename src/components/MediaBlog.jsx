@@ -73,9 +73,9 @@ export function MediaBlog() {
   return (
     <div
       id="media"
-      className="px-6 py-24 mx-auto bg-gray-900 max-w-7xl sm:py-32 lg:px-8"
+      className="mx-auto max-w-7xl bg-gray-900 px-6 py-24 sm:py-32 lg:px-8"
     >
-      <div className="max-w-3xl mx-auto">
+      <div className="mx-auto max-w-3xl">
         <ul role="list" className="divide-y divide-gray-100/10">
           {articles.map((article, i) => (
             <motion.li
@@ -92,11 +92,11 @@ export function MediaBlog() {
                 ease: 'easeOut',
               }}
               key={i}
-              className="flex py-8 gap-x-4"
+              className="flex gap-x-4 py-8"
             >
               <div className="lg:aspect-square aspect-aspect-square relative w-24 shrink-0 sm:aspect-[2/1] lg:w-64">
                 <Image
-                  className="flex-none object-cover w-24 h-24 rounded-none bg-gray-50"
+                  className="h-24 w-24 flex-none rounded-none bg-gray-50 object-cover"
                   src={article.imageUrl}
                   alt=""
                   fill
@@ -109,7 +109,7 @@ export function MediaBlog() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p className="text-sm font-semibold leading-6 text-white line-clamp-2 hover:underline sm:line-clamp-none">
+                    <p className="line-clamp-2 text-sm font-semibold leading-6 text-white hover:underline sm:line-clamp-none">
                       {article.title}
                     </p>
                   </Link>
@@ -117,7 +117,7 @@ export function MediaBlog() {
                     <time dateTime={article.dateTime}>{article.date}</time>
                   </p>
                 </div>
-                <p className="mt-1 text-sm leading-6 text-gray-300 line-clamp-1 sm:line-clamp-2">
+                <p className="mt-1 line-clamp-1 text-sm leading-6 text-gray-300 sm:line-clamp-2">
                   {article.content}
                 </p>
               </div>
