@@ -42,7 +42,7 @@ export function MediaBlog() {
       title: articleTitle02,
       articleUrl:
         'https://advokatwatch.no/nyheter/karriere/article16395400.ece',
-      imageUrl: '/media/article_4.webp',
+      imageUrl: '/media/temp.webp',
       content: articleText02,
       date: articleDate02,
       dateTime: '2023-08-31',
