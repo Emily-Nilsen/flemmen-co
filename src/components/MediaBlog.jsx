@@ -25,8 +25,21 @@ export function MediaBlog() {
   const articleText06 = t('article_text_06')
   const articleTitle07 = t('article_title_07')
   const articleText07 = t('article_text_07')
+  const articleTitle08 = t('article_title_08')
+  const articleDate08 = t('article_date_08')
+  const articleText08 = t('article_text_08')
 
   const articles = [
+    {
+      id: 8,
+      title: articleTitle08,
+      articleUrl:
+        'https://www.dn.no/jus/kryptovaluta/svindel/kriminalitet/blir-kalt-norges-storste-bedragerisak-tre-av-fem-tiltalte-motte-ikke-opp-i-rettssalen/2-1-1872504',
+      imageUrl: '/media/article_07.webp',
+      content: articleText08,
+      date: articleDate08,
+      dateTime: '2025-09-16',
+    },
     {
       id: 1,
       title: articleTitle01,
