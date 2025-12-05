@@ -6,6 +6,7 @@ export function Contact() {
   const { t } = useTranslation('common')
   // const kontakt = t('kontakt')
   const advokat = t('advokat')
+  const advokatfullmektig = t('advokatfullmektig')
   const teamleder = t('teamleder')
   const adresse = t('adresse')
   const postadresse = t('postadresse')
@@ -249,6 +250,47 @@ export function Contact() {
                       href="tel:+4790138842"
                     >
                       <dd>(+47) 901 38 842</dd>
+                    </Link>
+                  </div>
+                </dl>
+              </motion.div>
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 1,
+                  type: 'fade',
+                }}
+                className="rounded-none bg-gray-50 p-10"
+              >
+                <h3 className="text-sm font-semibold capitalize leading-7 text-gray-600">
+                  {advokatfullmektig}
+                </h3>
+                <h3 className="text-base font-semibold capitalize leading-7 text-gray-900">
+                  Tinius Svendsen
+                </h3>
+                <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                  <div>
+                    <dt className="sr-only">Email</dt>
+                    <dd>
+                      <Link
+                        className="font-semibold text-gray-600 transition-colors duration-200 ease-in-out hover:text-gray-500"
+                        href="mailto:tsv@flemmenco.no"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        tsv@flemmenco.no
+                      </Link>
+                    </dd>
+                  </div>
+                  <div className="mt-1">
+                    <dt className="sr-only">Phone number</dt>
+                    <Link
+                      className="transition-colors duration-200 ease-in-out hover:text-gray-900"
+                      href="tel:+4791858949"
+                    >
+                      <dd>(+47) 918 58 949</dd>
                     </Link>
                   </div>
                 </dl>
