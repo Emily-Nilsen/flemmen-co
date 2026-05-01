@@ -3,5 +3,6 @@ module.exports = {
   defaultLocale: 'no',
   pages: {
     '*': ['common'],
+    '/medarbeidere/[slug]': ['common', 'team'],
   },
 }

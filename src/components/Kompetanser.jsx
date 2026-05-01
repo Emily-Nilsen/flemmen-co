@@ -2,50 +2,22 @@ import { motion } from 'framer-motion'
 import useTranslation from 'next-translate/useTranslation'
 
 export function Kompetanser() {
-  const { t, lang } = useTranslation('common')
+  const { t } = useTranslation('common')
   const kompetanse = t('kompetanse')
-  const tvist = t('tvist')
-  const strafferett = t('strafferett')
-  const arbeidsrett = t('arbeidsrett')
-  const kontraktsrett = t('kontraktsrett')
-  const familie = t('familie')
-  const fastEiendom = t('fastEiendom')
-  const okonomiske = t('okonomiske')
-  const sikring = t('sikring')
 
   const features = [
-    {
-      name: tvist,
-      handle: 'tvist-og-prosedyre',
-    },
-    {
-      name: strafferett,
-      handle: 'strafferett',
-    },
-    {
-      name: arbeidsrett,
-      handle: 'arbeidsrett',
-    },
-    {
-      name: kontraktsrett,
-      handle: 'kontraktsrett',
-    },
-    {
-      name: familie,
-      handle: 'familie-og-arverett',
-    },
-    {
-      name: fastEiendom,
-      handle: 'fast-eiendom',
-    },
-    {
-      name: okonomiske,
-      handle: 'økonomiske-straffesaker',
-    },
-    {
-      name: sikring,
-      handle: 'sikring-av-verdier-ved-arrest-mv',
-    },
+    { name: t('tvist'), handle: 'tvist-og-prosedyre' },
+    { name: t('arbeidsrett'), handle: 'arbeidsrett' },
+    { name: t('strafferett'), handle: 'strafferett' },
+    { name: t('kontraktsrett'), handle: 'kontraktsrett' },
+    { name: t('familie'), handle: 'familie-og-arverett' },
+    { name: t('fastEiendom'), handle: 'fast-eiendom' },
+    { name: t('okonomiske'), handle: 'økonomiske-straffesaker' },
+    { name: t('sikring'), handle: 'sikring-av-verdier-ved-arrest-mv' },
+    { name: t('selskapsrett'), handle: 'selskapsrett' },
+    { name: t('compliance'), handle: 'compliance' },
+    { name: t('mna'), handle: 'm-and-a' },
+    { name: t('styreansvar'), handle: 'styreansvar' },
   ]
 
   return (
