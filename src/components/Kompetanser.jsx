@@ -18,6 +18,7 @@ export function Kompetanser() {
     { name: t('compliance'), handle: 'compliance' },
     { name: t('mna'), handle: 'm-and-a' },
     { name: t('styreansvar'), handle: 'styreansvar' },
+    { name: t('gransking'), handle: 'gransking-faktaundersokelser' },
   ]
 
   return (
