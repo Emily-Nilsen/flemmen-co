@@ -32,9 +32,9 @@ export const team = [
     slug: 'nicolai-skridshol',
     name: 'Nicolai Skridshol',
     roles: ['advokat', 'partner'],
-    email: '',
-    phoneDisplay: '',
-    phoneTel: '',
+    email: 'nsk@flemmenco.no',
+    phoneDisplay: '(+47) 900 96 861',
+    phoneTel: '+4790096861',
     practiceAreas: [
       'tvist',
       'selskapsrett',
@@ -45,7 +45,7 @@ export const team = [
       'mna',
       'styreansvar',
     ],
-    hidden: true,
+    hidden: false,
   },
   {
     slug: 'stine-kalkvik-stenberg',

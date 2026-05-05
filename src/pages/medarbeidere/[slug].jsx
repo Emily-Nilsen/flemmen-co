@@ -22,9 +22,7 @@ export default function TeamMemberPage({ slug }) {
   }
 
   const role = member.roles.map((r) => t(r)).join(' / ')
-  const bioYears = new Date().getFullYear() - 2009
-  const bio =
-    tt(`${slug}.bio`, { years: bioYears }, { returnObjects: true }) || []
+  const bio = tt(`${slug}.bio`, {}, { returnObjects: true }) || []
   const back = tt('back')
   const kontaktLabel = tt('kontakt')
   const kompetanseomraderLabel = tt('kompetanseomrader')
