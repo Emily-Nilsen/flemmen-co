@@ -93,16 +93,16 @@ export function StructuredData() {
                 },
               },
             },
-            // Person schema for Stine Kalkvik Stenberg
+            // Person schema for Stine Stenberg Slyngstadli
             {
               '@type': 'Person',
-              name: 'Stine Kalkvik Stenberg',
+              name: 'Stine Stenberg Slyngstadli',
               jobTitle: {
                 '@language': 'en',
                 '@value': 'Lawyer',
               },
               telephone: '+47 957 96 351',
-              email: 'sks@flemmenco.no',
+              email: 'sts@flemmenco.no',
               worksFor: {
                 '@type': 'LegalService',
                 name: {
@@ -113,13 +113,13 @@ export function StructuredData() {
             },
             {
               '@type': 'Person',
-              name: 'Stine Kalkvik Stenberg',
+              name: 'Stine Stenberg Slyngstadli',
               jobTitle: {
                 '@language': 'nb',
                 '@value': 'Advokat',
               },
               telephone: '+47 957 96 351',
-              email: 'sks@flemmenco.no',
+              email: 'sts@flemmenco.no',
               worksFor: {
                 '@type': 'LegalService',
                 name: {

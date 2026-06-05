@@ -48,10 +48,10 @@ export const team = [
     hidden: false,
   },
   {
-    slug: 'stine-kalkvik-stenberg',
-    name: 'Stine Kalkvik Stenberg',
+    slug: 'stine-stenberg-slyngstadli',
+    name: 'Stine Stenberg Slyngstadli',
     roles: ['advokat'],
-    email: 'sks@flemmenco.no',
+    email: 'sts@flemmenco.no',
     phoneDisplay: '(+47) 957 96 351',
     phoneTel: '+4795796351',
     practiceAreas: [

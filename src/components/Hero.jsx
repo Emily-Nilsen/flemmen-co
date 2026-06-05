@@ -12,7 +12,7 @@ export function Hero() {
         <div className="sm:hidden">
           <Image
             src="/media/hero-mobile.webp"
-            alt="Christian Flemmen Johansen & Stine Kalkvik Stenberg"
+            alt="Christian Flemmen Johansen & Stine Stenberg Slyngstadli"
             width={1598}
             height={1500}
             priority
@@ -25,7 +25,7 @@ export function Hero() {
         <div className="hidden sm:block">
           <Image
             src="/media/hero-desktop.webp"
-            alt="Christian Flemmen Johansen & Stine Kalkvik Stenberg"
+            alt="Christian Flemmen Johansen & Stine Stenberg Slyngstadli"
             width={4500}
             height={2739}
             priority
