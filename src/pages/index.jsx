@@ -6,7 +6,9 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { TextBox1 } from '@/components/TextBox1'
 import { MediaBlog } from '@/components/MediaBlog'
+import { Oppstart } from '@/components/Oppstart'
 import { Kompetanser } from '@/components/Kompetanser'
+import { Team } from '@/components/Team'
 
 import { Contact } from '@/components/Contact'
 import { StructuredData } from '@/components/StructuredData'
@@ -40,9 +42,11 @@ export default function Home() {
         <Hero />
 
         <TextBox1 />
-        <MediaBlog />
-        <Kompetanser />
+        <Oppstart />
+        <Team />
         <Contact />
+        <Kompetanser />
+        <MediaBlog />
         <Footer />
       </main>
     </>

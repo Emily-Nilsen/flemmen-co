@@ -1,6 +1,7 @@
 export const team = [
   {
     slug: 'ane-natvig',
+    photo: '/media/team/ane.webp',
     name: 'Ane Natvig',
     roles: ['kontorsjef'],
     email: 'ane@flemmenco.no',
@@ -11,6 +12,7 @@ export const team = [
   },
   {
     slug: 'christian-flemmen-johansen',
+    photo: '/media/team/cfj.webp',
     name: 'Christian Flemmen Johansen',
     roles: ['advokat', 'partner'],
     email: 'cfj@flemmenco.no',
@@ -30,6 +32,7 @@ export const team = [
   },
   {
     slug: 'nicolai-skridshol',
+    photo: '/media/team/nsk.webp',
     name: 'Nicolai Skridshol',
     roles: ['advokat', 'partner'],
     email: 'nsk@flemmenco.no',
@@ -49,6 +52,7 @@ export const team = [
   },
   {
     slug: 'stine-stenberg-slyngstadli',
+    photo: '/media/team/sts.webp',
     name: 'Stine Stenberg Slyngstadli',
     roles: ['advokat'],
     email: 'sts@flemmenco.no',
@@ -65,6 +69,7 @@ export const team = [
   },
   {
     slug: 'eivind-hatlebrekke',
+    photo: '/media/team/eha.webp',
     name: 'Eivind Hatlebrekke',
     roles: ['advokat'],
     email: 'eha@flemmenco.no',
@@ -82,6 +87,7 @@ export const team = [
   },
   {
     slug: 'tinius-svendsen',
+    photo: '/media/team/tsv.webp',
     name: 'Tinius Svendsen',
     roles: ['advokatfullmektig'],
     email: 'tsv@flemmenco.no',

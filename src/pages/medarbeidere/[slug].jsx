@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
@@ -6,6 +7,10 @@ import useTranslation from 'next-translate/useTranslation'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { visibleTeam, getTeamMember } from '@/data/team'
+
+// Kompetanseomrader per medarbeider er midlertidig skrudd av etter onske fra Ane
+// (e-post 25.08.2026) - settes til true igjen nar innholdet er avklart.
+const SHOW_PRACTICE_AREAS = false
 
 export default function TeamMemberPage({ slug }) {
   const router = useRouter()
@@ -28,7 +33,10 @@ export default function TeamMemberPage({ slug }) {
   const kompetanseomraderLabel = tt('kompetanseomrader')
   const homeHref = lang === 'no' ? '/' : `/${lang}`
   const hasContact = member.email || member.phoneDisplay
-  const hasPracticeAreas = member.practiceAreas && member.practiceAreas.length > 0
+  const hasPracticeAreas =
+    SHOW_PRACTICE_AREAS &&
+    member.practiceAreas &&
+    member.practiceAreas.length > 0
 
   return (
     <>
@@ -81,6 +89,19 @@ export default function TeamMemberPage({ slug }) {
             </article>
 
             <aside className="space-y-10 lg:col-span-1">
+              {member.photo && (
+                <div className="relative aspect-[4/5] w-full max-w-xs overflow-hidden bg-gray-50">
+                  <Image
+                    className="object-cover object-top grayscale"
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    sizes="(min-width: 1024px) 320px, 100vw"
+                    priority
+                  />
+                </div>
+              )}
+
               {hasContact && (
                 <section>
                   <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-500">

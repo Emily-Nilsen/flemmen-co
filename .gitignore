@@ -33,3 +33,11 @@ yarn-error.log*
 
 # claude code (worktrees, local settings)
 .claude/
+
+# Local Netlify folder
+.netlify
+
+# next-sitemap output (regenerated on every build)
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap-*.xml

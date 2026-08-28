@@ -7,10 +7,12 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
   const { t } = useTranslation('common')
   const kontakt = t('kontakt')
+  const teamet = t('teamet')
 
   return [
-    [`Media`, '#media'],
+    [`${teamet}`, '#teamet'],
     [`${kontakt}`, '#kontakt'],
+    [`Media`, '#media'],
   ].map(([label, href], index) => (
     <Link
       key={label}

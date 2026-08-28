@@ -22,7 +22,7 @@ export function Kompetanser() {
   ]
 
   return (
-    <div id="kompetanser" className="mx-auto max-w-7xl bg-white py-24 sm:py-32">
+    <div id="kompetanser" className="mx-auto max-w-7xl bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-0">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-extrabold uppercase text-gray-900 sm:text-4xl">
@@ -33,7 +33,7 @@ export function Kompetanser() {
             voluptatum cupiditate veritatis in accusamus quisquam.
           </p> */}
         </div>
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none ">
+        <dl className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none ">
           {features.map((feature, i) => (
             <motion.div
               initial={{
