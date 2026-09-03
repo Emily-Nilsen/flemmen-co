@@ -4,6 +4,26 @@
 export function getArticles(t) {
   return [
     {
+      id: 11,
+      title: t('article_title_11'),
+      articleUrl:
+        'https://www.dn.no/advokater/advokater/advokatfullmektig/overtid/arbeidstilsynet-intervjuet-60-juniorer-hos-advokatfirmaene-uten-ett-referat/2-1-2014994',
+      imageUrl: null,
+      content: t('article_text_11'),
+      date: t('article_date_11'),
+      dateTime: '2026-07-20',
+    },
+    {
+      id: 10,
+      title: t('article_title_10'),
+      articleUrl:
+        'https://www.okonomi24.com/nyheter/nar-ingen-ser-hele-bildet-ma-cfo-stille-de-ubehagelige-sporsmalene/130981',
+      imageUrl: null,
+      content: t('article_text_10'),
+      date: t('article_date_10'),
+      dateTime: '2026-06-05',
+    },
+    {
       id: 8,
       title: t('article_title_08'),
       articleUrl:
@@ -12,6 +32,16 @@ export function getArticles(t) {
       content: t('article_text_08'),
       date: t('article_date_08'),
       dateTime: '2025-09-16',
+    },
+    {
+      id: 12,
+      title: t('article_title_12'),
+      articleUrl:
+        'https://www.vg.no/nyheter/i/93PvmE/advokat-frikjent-for-vold-mot-taxisjaafoer',
+      imageUrl: null,
+      content: t('article_text_12'),
+      date: t('article_date_12'),
+      dateTime: '2025-09-05',
     },
     {
       id: 1,
