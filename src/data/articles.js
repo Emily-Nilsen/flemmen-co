@@ -8,17 +8,21 @@ export function getArticles(t) {
       title: t('article_title_11'),
       articleUrl:
         'https://www.dn.no/advokater/advokater/advokatfullmektig/overtid/arbeidstilsynet-intervjuet-60-juniorer-hos-advokatfirmaene-uten-ett-referat/2-1-2014994',
-      imageUrl: null,
+      // DN har gitt tillatelse til a bruke forsiden ved siden av lenken til
+      // artikkelen (Ane, e-post 08.09.2026).
+      imageUrl: '/media/article_dn_forside.webp',
       content: t('article_text_11'),
       date: t('article_date_11'),
-      dateTime: '2026-07-20',
+      dateTime: '2026-07-21',
+      aspect: 'portrait',
     },
     {
       id: 10,
       title: t('article_title_10'),
       articleUrl:
         'https://www.okonomi24.com/nyheter/nar-ingen-ser-hele-bildet-ma-cfo-stille-de-ubehagelige-sporsmalene/130981',
-      imageUrl: null,
+      // Bildet er tatt av Flemmen & Co sin egen fotograf - klarert av Ane 03.09.2026.
+      imageUrl: '/media/article_okonomi24.webp',
       content: t('article_text_10'),
       date: t('article_date_10'),
       dateTime: '2026-06-05',
