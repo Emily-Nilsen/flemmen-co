@@ -46,8 +46,12 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header() {
-  const { t } = useTranslation('common')
+  const { t, lang } = useTranslation('common')
   const kontakt = t('kontakt')
+  const teamet = t('teamet')
+
+  // Samme grunn som i NavLinks: seksjonene finnes bare paa forsiden.
+  const homeHref = lang === 'no' ? '' : `/${lang}`
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
 
   const closeMobileMenu = () => {
@@ -110,9 +114,14 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 px-6 pt-32 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#media">Media</MobileNavLink>
-                            <MobileNavLink href="#kontakt">
+                            <MobileNavLink href={`${homeHref}/#teamet`}>
+                              {teamet}
+                            </MobileNavLink>
+                            <MobileNavLink href={`${homeHref}/#kontakt`}>
                               {kontakt}
+                            </MobileNavLink>
+                            <MobileNavLink href={`${homeHref}/#media`}>
+                              Media
                             </MobileNavLink>
                             {/* Pass the closeMobileMenu function as a prop */}
                             <LanguageSwitcher

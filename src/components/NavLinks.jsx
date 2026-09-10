@@ -5,14 +5,18 @@ import useTranslation from 'next-translate/useTranslation'
 
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
-  const { t } = useTranslation('common')
+  const { t, lang } = useTranslation('common')
   const kontakt = t('kontakt')
   const teamet = t('teamet')
 
+  // Seksjonene ligger paa forsiden, saa lenkene maa peke dit uansett hvilken
+  // side man staar paa - ellers gjoer de ingenting fra medarbeidersidene.
+  const homeHref = lang === 'no' ? '' : `/${lang}`
+
   return [
-    [`${teamet}`, '#teamet'],
-    [`${kontakt}`, '#kontakt'],
-    [`Media`, '#media'],
+    [`${teamet}`, `${homeHref}/#teamet`],
+    [`${kontakt}`, `${homeHref}/#kontakt`],
+    [`Media`, `${homeHref}/#media`],
   ].map(([label, href], index) => (
     <Link
       key={label}
