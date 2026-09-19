@@ -19,6 +19,10 @@ export function Kompetanser() {
     { name: t('mna'), handle: 'm-and-a' },
     { name: t('styreansvar'), handle: 'styreansvar' },
     { name: t('gransking'), handle: 'gransking-faktaundersokelser' },
+    {
+      name: t('bakgrunnsundersokelser'),
+      handle: 'bakgrunnsundersokelser',
+    },
   ]
 
   return (
