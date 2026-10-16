@@ -8,7 +8,6 @@ export default function Document(props) {
   return (
     <Html className="h-full antialiased bg-white" lang={lang}>
       <Head>
-        <link rel="stylesheet" href="https://use.typekit.net/kow2pgi.css" />
         <link rel="icon" href="/media/favicon.svg" />
       </Head>
       <body className="flex flex-col h-full">

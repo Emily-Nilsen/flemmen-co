@@ -1,5 +1,5 @@
 body {
-  font-family: 'montserrat', sans-serif;
+  font-family: var(--font-montserrat);
 }
 
 @tailwind base;
